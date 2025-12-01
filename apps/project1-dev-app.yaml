@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: project3-nginx-dev
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/theseanchristopher/project3-app-config.git
+    targetRevision: main           # same branch as prod
+    path: overlays/dev             # <- dev overlay
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: project1            # same namespace for this project
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+
