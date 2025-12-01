@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
         - name: nginx
-#         image: 349821334974.dkr.ecr.us-east-1.amazonaws.com/project1-nginx:v1
-          image: IMAGE_PLACEHOLDER
+          image: 349821334974.dkr.ecr.us-east-1.amazonaws.com/project1-nginx:latest
+#         image: IMAGE_PLACEHOLDER
           ports:
             - containerPort: 80
           resources:
