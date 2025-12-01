@@ -10,5 +10,5 @@ resources:
 images:
   - name: project1-nginx
     newName: 349821334974.dkr.ecr.us-east-1.amazonaws.com/project1-nginx
-    newTag: 5f8942d464a7023f27fc3d16a36e04af8ba42663
+    newTag: 450612150b9dfa601d40a11747877e3a01b1277f
 
