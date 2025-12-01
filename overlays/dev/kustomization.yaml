@@ -13,4 +13,4 @@ patchesStrategicMerge:
 images:
   - name: project1-nginx
     newName: 349821334974.dkr.ecr.us-east-1.amazonaws.com/project1-nginx
-        newTag: 6a7d8bdeaa0ebf0d741a42b2b2d67e6c8190a979
+            newTag: 68da578e7193072dc277d155fd9d36e1f701acbb
