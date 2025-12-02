@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: project3-dev
+  labels:
+    app: project3
+    environment: dev
+
