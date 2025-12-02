@@ -1,16 +1,12 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-
 namespace: project1
 namePrefix: dev-
-
 resources:
   - ../../base
-
 patchesStrategicMerge:
   - ingress-dev-patch.yaml
-
 images:
   - name: project1-nginx
     newName: 349821334974.dkr.ecr.us-east-1.amazonaws.com/project1-nginx
-    newTag: 44a0087ae2cd959766871d92b95e12b0896d0199
+    newTag: 80a362f435697be2105b3907348c6c1dcc5fc693
